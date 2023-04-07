@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>todo list</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!--Navbar start.-->
+    <nav class="navigation">
+      <div class="nav-brand">Welcome to my ToDo List</div>
+    </nav>
+    <!--Navbar end-->
+    <div class="searchBar">
+      <input type="search" id="search" placeholder="Search..." />
+    </div>
+    <div class="container-fluid">
+      <div class="container">
+        <div class="temp">
+          <div class="input-group">
+            <input
+              type="text"
+              class="form-control"
+              id="userName"
+              placeholder="Enter Your Items"
+            />
+            <button class="btn" type="button" id="addUser">Add List</button>
+          </div>
+          <!--End of class input-group-->
+          <div class="display">
+            <table class="table">
+              <thead>
+                <!--Table Head start-->
+                <tr>
+                  <th>#</th>
+                  <th>Items</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <!--Table head end-->
+              <tbody id="records">
+                <!--Table body start-->
+                <!-- <tr>
+                  <th scope="row">1</th>
+                  <td>
+                    King of Javascript Lorem ipsum dolor sit amet consectetur,
+                    adipisicing elit. Aperiam f
+                  </td>
+                  <td class="awasomeButton">
+                    <i
+                      class="fas fa-edit"
+                      style="font-size: 24px; color: green"
+                    ></i>
+                    <i
+                      class="fas fa-trash-alt"
+                      style="font-size: 24px; color: red"
+                    ></i>
+                     <i class="fa-solid fa-trash-can"></i>
+                  </td>
+                </tr> 
+              </tbody>
+              <Table body End-->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="main.js"></script>
+</html>
